@@ -60,9 +60,10 @@
         <label class="form-label">🎰Game bạn muốn mua</label>
         <select class="form-select" id="game" required>
           <option value="">--- chọn game ---</option>
-          <option value="Play Together VNG">🎮 PLAY TOGETHER VNG</option>
           <option value="Liên Quân Mobile">🔥 Liên Quân Mobile</option>
-          <option value="PUBG Mobile">🔫 PUBG Mobile</option>
+          <option value="Liên Quân Mobile">🔥🔥 Liên Quân Mobile 2</option>
+          <!-- <option value="Play Together VNG">🎮 PLAY TOGETHER VNG</option> -->
+          <!-- <option value="PUBG Mobile">📱 PUBG Mobile</option> -->
         </select>
       </div>
       <div class="mb-3">
@@ -146,7 +147,7 @@
       document.getElementById("note").innerText = randomCode;
       document.getElementById("product").innerText = product;
 
-      const url = `https://script.google.com/macros/s/AKfycbw63iu36YhUi62mo_wRqvHILY9cjkKoqt53WpHhzTNqBaUrg43_TleTdrkbhtx_0xVm/exec?duration=${duration}&discountCode=${discountCode}&amount=${originalAmount}`;
+      const url = `https://script.google.com/macros/s/AKfycby7a71X9wda2VmLyl0Wq2e6pE18PuDl2lKCJRiQh92Skqu7JdP5dAJqR3qKFrVcXxun/exec?duration=${duration}&discountCode=${discountCode}&amount=${originalAmount}`;
 
       fetch(url)
         .then(res => res.json())
@@ -220,7 +221,7 @@
         const resultBox = document.getElementById("resultBox");
         resultBox.innerHTML = `⏳ Đang xử lý giao dịch...`;
 
-        fetch("https://script.google.com/macros/s/AKfycbw63iu36YhUi62mo_wRqvHILY9cjkKoqt53WpHhzTNqBaUrg43_TleTdrkbhtx_0xVm/exec", {
+        fetch("https://script.google.com/macros/s/AKfycby7a71X9wda2VmLyl0Wq2e6pE18PuDl2lKCJRiQh92Skqu7JdP5dAJqR3qKFrVcXxun/exec", {
           method: "POST",
           body: formData
         })
